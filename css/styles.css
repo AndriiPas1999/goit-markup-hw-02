@@ -21,11 +21,13 @@
 
 a {
    text-decoration: none;
+   font-style: normal;
 }
 
 
-.body {
-   font-family: 'Roboto';
+body {
+   font-family: Roboto, sans-serif;
+   font-style: normal;
    color: var(--primary-text-color)
 }
 
@@ -34,6 +36,8 @@ a {
 
 /* Logo styles */
 .logo {
+   text-decoration: none;
+
    font-family: 'Raleway';
    font-weight: 700;
    font-size: 26px;
@@ -50,6 +54,7 @@ a {
 /* Navigation styles */
 .site-nav a {
    font-family: 'Roboto';
+   font-style: normal;
    font-weight: 500;
    font-size: 14px;
    line-height: 1.2;
@@ -66,18 +71,6 @@ a {
    color: var(--accent-color);
 }
 
-/* BUTTONS */
-.button {
-   color: #FFFFFF;
-   background-color: var(--accent-color);
-
-}
-
-.button:hover {
-   cursor: pointer;
-
-}
-
 
 /* Contacts styles */
 .contacts a {
@@ -92,6 +85,7 @@ a {
 .contacts :focus {
    color: var(--accent-color);
 }
+
 
 
 /* Main styles */
@@ -111,10 +105,26 @@ a {
    color: #ffffff
 }
 
-.button {
+.hero .button {
    color: #ffffff;
    background-color: var(--accent-color);
+   border: none;
+
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 1.8;
+
+   display: flex;
+   align-items: center;
+   text-align: center;
+   letter-spacing: 0.06em;
 }
+
+.hero .button:hover,
+.hero .button:focus {
+   cursor: pointer;
+   color: #000000;
+} 
 
 
 
@@ -162,6 +172,7 @@ a {
    font-size: 16px;
    line-height: 1.2;
    letter-spacing: 0.03em;
+   color: var(--title-text-color);
 }
 
 .team-card.position {
@@ -179,6 +190,7 @@ a {
 /* Buttons list */
 
 .button-list .button {
+   font-family: Roboto;
    background-color: var(--secondary-background-color);
    color: var(--title-text-color);
    font-weight: 500;
@@ -225,23 +237,24 @@ footer {
 
 
 /* Contacts styles */
-.footer-contacts a {
-   font-weight: 400;
-   font-size: 14px;
-   line-height: 1.71;
-   letter-spacing: 0.03em;
-   color: #FFFFFF;
-}
-
-.footer-contacts :hover,
-.footer-contacts :focus {
-   color: var(--accent-color);
-}
-
 .footer.logo {
    color: #FFFFFF;
 }
 
-.footer-contacts.trancparent {
+.footer-contacts a {
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 1.71;
+   letter-spacing: 0.03em;
    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-contacts .adress {
+   color: #FFFFFF;
+}
+
+.footer-contacts :focus,
+.footer-contacts :hover {
+   color: var(--accent-color);
 }
